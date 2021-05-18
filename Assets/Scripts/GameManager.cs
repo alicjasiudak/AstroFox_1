@@ -7,7 +7,6 @@ using UnityEngine;
         [SerializeField] private GameObject gameOverText;
         [SerializeField] private GameObject gameWonText;
         [SerializeField] private GameObject timer;
-        [SerializeField] private GameObject finish;
         [SerializeField]
         private GameObject player;
         private void OnEnable()

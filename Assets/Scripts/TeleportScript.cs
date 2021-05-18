@@ -10,7 +10,6 @@ public class TeleportScript : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject panel;
     [SerializeField] private float fadeSpeed;
-    private bool stepedon =  false;
     
     public CanvasGroup uiElement;
 
@@ -62,39 +61,4 @@ public class TeleportScript : MonoBehaviour
         }
 
     }
-  /*  IEnumerator FadeInOut()
-    {
-        Debug.Log("canvas inactive");
-        canvas.SetActive(true);
-        Debug.Log("canvas activated");
-
-        var material = canvas.GetComponent<Image>().material;
-        //forever
-        while (true)
-        {
-            // fade in
-            yield return Fade(material, 1);
-            // wait
-            Debug.Log("should have faded in");
-
-            yield return new WaitForSeconds(1);
-            // fade out
-            yield return Fade(material, 0);
-            Debug.Log("and should have faded out");
-
-            // wait
-            canvas.SetActive(false);
-            stepedon = false;
-        }
-    }
-
-    IEnumerator Fade(Material mat, float targetAlpha)
-    {
-        while (mat.color.a != targetAlpha)
-        {
-            var newAlpha = Mathf.MoveTowards(mat.color.a, targetAlpha, fadeSpeed * Time.deltaTime);
-            mat.color = new Color(mat.color.r, mat.color.g, mat.color.b, newAlpha);
-            yield return null;
-        }
-    }*/
 }
